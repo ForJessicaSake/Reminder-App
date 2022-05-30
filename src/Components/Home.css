@@ -45,6 +45,15 @@ main-container {
     font-weight: bold;
 }
 
+.button-container button:hover {
+    transform: scale(1, 1.03);
+    background-color: #3d1b74;
+    color: #A7B3B1;
+    transition: 2s;
+    transition-delay: 0.0001s;
+}
+
+
 .reminder-container h4 {
     font-size: 1.2em;
     font-weight: lighter;
