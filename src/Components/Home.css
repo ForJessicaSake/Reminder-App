@@ -5,17 +5,17 @@
     border-radius: 10px;
 }
 
-.reminder-container:nth-child(3n + 2) {
+.reminder-container:nth-child(2n + 2) {
     background: linear-gradient( 90deg, rgb(184, 149, 255) 0%, rgb(172, 135, 247) 100%);
     color: #fafafa;
 }
 
-.reminder-container:nth-child(3n + 2) button {
+.reminder-container:nth-child(2n + 2) button {
     background-color: #fafafa;
     color: rgb(172, 135, 247);
 }
 
-.reminder-container:nth-child(3n + 2) .reminder-title {
+.reminder-container:nth-child(2n + 2) .reminder-title {
     color: #fafafa;
 }
 

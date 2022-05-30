@@ -3,15 +3,10 @@ import Home from './Home';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Reminder from './Reminder';
+
 function Data() {
 
-    const [reminders, setReminders] = useState([{
-        title: "Attend Betty's valedictory service",
-        note: "Pick up a silver necklace from the ozark jewelry shop for Betty on your way to the veledictory service.",
-        location: " Queens Hall street",
-        time: '4pm',
-        id: 1
-    },
+    const [reminders, setReminders] = useState([
 
     {
         title: "Appointment with Doctor Shantel",
@@ -20,6 +15,13 @@ function Data() {
         time: '10am',
         id: 2
     },
+        {
+            title: "Attend Betty's valedictory service",
+            note: "Pick up a silver necklace from the Saints jewelry shop for Betty on your way to the veledictory service.",
+            location: " Queens Hall street",
+            time: '4pm',
+            id: 1
+        },
     {
         title: "Groceries",
         note: " Make a quick stop at Merka organico to pick a few inventories.",
@@ -34,30 +36,32 @@ function Data() {
         time: '8am',
         id: 4
     },
-    {
-        title: "Mail",
-        note: "Send a mail to the head office",
-        location: "Swift Networks",
-        time: '11am',
-        id: 5
-    }])
+  ])
 
     const handleDelete = (id) => {
         const newreminder = reminders.filter(reminder => reminder.id !== id)
         setReminders(newreminder)
     }
 
+    const handleSubmit = (events, note, location, time) => {
+
+        const reminder = { events, note, location, time };
+        setReminders(reminder);
+
+    }
+
     return (
         <section>
             <Router>
                 <Navbar />
-                <Switch>  
-                    <Route exact path="/"> 
+                <Switch>
+                    <Route exact path="/:id">
                         <Home reminders={reminders} handleDelete={handleDelete} />
-                    </Route>   
+                    </Route>
                     <Route path="/Reminder">
-                        <Reminder reminders={reminders} handleDelete={handleDelete} />
-                    </Route>                       
+                        <Reminder
+                            handleSubmit={handleSubmit}/>
+                        </Route>
                 </Switch>
             </Router>
 
