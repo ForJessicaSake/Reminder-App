@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './Reminder.css';
 import { useHistory } from "react-router-dom";
 
@@ -10,6 +10,11 @@ function Reminder({ handleSubmit}) {
     const [time, setTime] = useState('')
 
     const history = useHistory();
+
+    const focusRef = useRef(null);
+    useEffect(() => {
+        focusRef.current.focus()
+    },[])
 
   const handleClick=(e)=>{
       e.preventDefault();
@@ -28,6 +33,7 @@ function Reminder({ handleSubmit}) {
                     type='text'
                     required
                     value={title}
+                    ref={focusRef}
                     onChange={(e)=> setTitle(e.target.value)}
                 ></input>
 
@@ -36,6 +42,7 @@ function Reminder({ handleSubmit}) {
                     type='text'
                     required
                     value={note}
+                    ref={focusRef}
                     onChange={(e)=> setNote(e.target.value)}
                 ></textarea>
 
@@ -44,6 +51,7 @@ function Reminder({ handleSubmit}) {
                     type='text'
                     required
                     value={location}
+                    ref={focusRef}
                     onChange={(e) => setLocation(e.target.value)}
 
                 ></input>
@@ -53,6 +61,7 @@ function Reminder({ handleSubmit}) {
                     type='text'
                     required
                     value={time}
+                    ref={focusRef}
                     onChange={(e) => setTime(e.target.value)}
                 ></input>
                 <input type='submit' className='btn'/>
