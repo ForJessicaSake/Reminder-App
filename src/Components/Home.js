@@ -18,7 +18,7 @@ function Home({ reminders, handleDelete}) {
 
   }
     return (
-        <motion.section
+        <motion.section className='main-container'
             variants={heroVariant}
             initial='hidden'
             animate='visible'>
