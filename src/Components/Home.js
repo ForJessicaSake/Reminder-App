@@ -1,9 +1,28 @@
 import React from 'react'
 import './Home.css'
+import { motion } from 'framer-motion'
+
 
 function Home({ reminders, handleDelete}) {
+    
+      const heroVariant = {
+    hidden: {
+      x: '-100vw'
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.5, duration: 5, type: 'spring', stiffness: 200
+      }
+    }
+
+  }
     return (
-        <div>
+        <motion.section
+            variants={heroVariant}
+            initial='hidden'
+            animate='visible'>
+
             {reminders.map((reminder) => (
                 <section className="reminder-container" key={reminders.id}>
                     <article>
@@ -17,7 +36,7 @@ function Home({ reminders, handleDelete}) {
                     </aside>
                 </section>
             ))}
-        </div>
+        </motion.section>
     )
 }
 

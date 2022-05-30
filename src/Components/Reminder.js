@@ -1,17 +1,21 @@
 import {useState} from 'react'
-import { Link } from 'react-router-dom';
 import './Reminder.css';
+import { useHistory } from "react-router-dom";
 
 function Reminder({ handleSubmit}) {
 
-    const [events, setEvents] =useState('')
+    const [title, setTitle] =useState('')
     const [note, setNote] = useState('')
     const [location, setLocation] = useState('')
     const [time, setTime] = useState('')
 
+    const history = useHistory();
+
   const handleClick=(e)=>{
       e.preventDefault();
-      handleSubmit(events, note, location, time)
+      handleSubmit(title, note, location, time)
+      history.push("/");
+
 
   }
 
@@ -23,8 +27,8 @@ function Reminder({ handleSubmit}) {
                 <input
                     type='text'
                     required
-                    value={events}
-                    onChange={(e)=> setEvents(e.target.value)}
+                    value={title}
+                    onChange={(e)=> setTitle(e.target.value)}
                 ></input>
 
                 <label>Note:</label>
@@ -51,7 +55,7 @@ function Reminder({ handleSubmit}) {
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
                 ></input>
-                <Link to='/'><input type='submit' className='btn'/></Link> 
+                <input type='submit' className='btn'/>
             </form>
         </section>
     )

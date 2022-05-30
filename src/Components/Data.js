@@ -43,10 +43,10 @@ function Data() {
         setReminders(newreminder)
     }
 
-    const handleSubmit = (events, note, location, time) => {
+    const handleSubmit = (title, note, location, time) => {
 
-        const reminder = { events, note, location, time };
-        setReminders(reminder);
+        const reminder = { title, note, location, time };
+        setReminders([reminder, ...reminders]);
 
     }
 
