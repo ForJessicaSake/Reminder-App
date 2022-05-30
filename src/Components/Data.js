@@ -28,18 +28,18 @@ function Data() {
         id: 3
     },
     {
-        title: "Appointment with Doctor Shantel",
-        note: "A tooth checkup with doctor Shantel to get diagnosis for toothache",
-        location: "Royal hospital",
-        time: '10am',
-        id: 2
+        title: "Work",
+        note: "Complete the business plan and send it in for review",
+        location: "Office",
+        time: '8am',
+        id: 4
     },
     {
-        title: "Appointment with Doctor Shantel",
-        note: "A tooth checkup with doctor Shantel to get diagnosis for toothache",
-        location: "Royal hospital",
-        time: '10am',
-        id: 2
+        title: "Mail",
+        note: "Send a mail to the head office",
+        location: "Swift Networks",
+        time: '11am',
+        id: 5
     }])
 
     const handleDelete = (id) => {
