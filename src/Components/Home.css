@@ -1,0 +1,178 @@
+.reminder-container {
+    margin: 5% 0% 0% 5%;
+    padding: 2% 2%;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.reminder-container:nth-child(3n + 2) {
+    background: linear-gradient( 90deg, rgb(184, 149, 255) 0%, rgb(172, 135, 247) 100%);
+    color: #fafafa;
+}
+
+.reminder-container:nth-child(3n + 2) button {
+    background-color: #fafafa;
+    color: rgb(172, 135, 247);
+}
+
+.reminder-container:nth-child(3n + 2) .reminder-title {
+    color: #fafafa;
+}
+
+.reminder-title {
+    color: rgb(172, 135, 247);
+    margin-bottom: 3%;
+}
+
+.reminder-container p {
+    margin-bottom: 3%;
+    line-height: 1.8;
+}
+
+.button-container button {
+    width: 120px;
+    padding: 9px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(163, 121, 247);
+    color: #fafafa;
+    font-size: 15px;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.reminder-container h4 {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.reminder-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 2%;
+}
+
+
+/*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .reminder-container {
+        margin: 5% 5% 0% 5%;
+        padding: 5% 4%;
+        box-shadow: 3px 10px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .button-container button {
+        width: 120px;
+        padding: 9px;
+        border-radius: 5px;
+        color: #fafafa;
+        font-size: 15px;
+        margin-top: 7%;
+    }
+    .reminder-title {
+        font-size: 1.2em;
+    }
+    .reminder-container p {
+        line-height: 2;
+        font-size: 1.1em;
+    }
+    .reminder-container h4 {
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+    .reminder-container h3 {
+        font-size: 1.2em;
+        margin-bottom: 3%;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR BIGGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .reminder-container {
+        margin: 5% 5% 0% 5%;
+        padding: 5% 5%;
+        box-shadow: 3px 10px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .button-container button {
+        width: 180px;
+        padding: 11px;
+        border-radius: 8px;
+        color: #fafafa;
+        font-size: 32px;
+        margin-top: 7%;
+    }
+    .reminder-title {
+        font-size: 1.9em;
+    }
+    .reminder-container p {
+        line-height: 1.8;
+        font-size: 1.8em;
+    }
+    .reminder-container h4 {
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    .reminder-container h3 {
+        font-size: 1.8em;
+        margin-bottom: 3%;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR LARGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .reminder-container {
+        margin: 5% 5% 0% 5%;
+        padding: 5% 5%;
+        box-shadow: 3px 10px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .button-container button {
+        width: 220px;
+        padding: 11px;
+        border-radius: 8px;
+        color: #fafafa;
+        font-size: 35px;
+        margin-top: 7%;
+    }
+    .reminder-title {
+        font-size: 2.7em;
+    }
+    .reminder-container p {
+        line-height: 1.8;
+        font-size: 2.1em;
+    }
+    .reminder-container h4 {
+        font-size: 2.2em;
+        font-weight: lighter;
+    }
+    .reminder-container h3 {
+        font-size: 2.3em;
+        margin-bottom: 3%;
+    }
+}

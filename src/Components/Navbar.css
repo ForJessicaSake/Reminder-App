@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    cursor: pointer;
+    border-bottom: 1.5px solid #fafafa;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.4em;
+    color: rgb(172, 135, 247);
+}
+
+.links {
+    display: flex;
+    gap: 10em;
+    font-size: 1.15em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar h1 {
+        font-size: 1.4em;
+        color: rgb(172, 135, 247);
+    }
+    .links {
+        display: flex;
+        gap: 0em;
+        font-size: 1.15em;
+        width: 150px;
+    }
+    .links a {
+        margin: 0px 20px;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR BIGGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar h1 {
+        font-size: 2.1em;
+        color: rgb(172, 135, 247);
+    }
+    .links {
+        display: flex;
+        gap: 0em;
+        font-size: 1.8em;
+        width: 210px;
+    }
+    .links a {
+        margin: 0px 20px;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR LARGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar h1 {
+        font-size: 2.9em;
+        color: rgb(172, 135, 247);
+    }
+    .links {
+        display: flex;
+        gap: 0em;
+        font-size: 2.5em;
+        width: 240px;
+    }
+    .links a {
+        margin: 0px 20px;
+    }
+}

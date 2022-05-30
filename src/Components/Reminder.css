@@ -1,0 +1,247 @@
+.new-reminder-container {
+    margin: 5% 0% 0% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-reminder-container h1 {
+    text-align: center;
+    color: #ac87f7;
+    font-size: 1.8em;
+}
+
+form {
+    margin: auto;
+    display: inherit;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+label {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input {
+    width: 25rem;
+    padding: 12px;
+    margin-bottom: 5%;
+    border: 0.01px solid rgb(163, 163, 163);
+    border-radius: 5px;
+}
+
+textarea {
+    width: 25rem;
+    padding: 20px;
+    margin-bottom: 5%;
+    border: 0.01px solid rgb(163, 163, 163);
+    border-radius: 5px;
+}
+
+select {
+    width: 25rem;
+    padding: 10px;
+}
+
+button {
+    width: 150px;
+    margin: 3% auto;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(163, 121, 247);
+    color: #fafafa;
+    border: 0px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/*==========================================================MEDIA QUERIES FOR SMALLLER SCREENS =============================================================*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .new-reminder-container h1 {
+        text-align: center;
+        color: rgb(172, 135, 247);
+        font-size: 1.5em;
+        margin-top: 5%;
+    }
+    form {
+        margin: auto;
+        display: inherit;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    label {
+        margin-bottom: 3%;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    input {
+        width: 20rem;
+        padding: 12px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+    }
+    input[value] {
+        font-size: 1.05em;
+    }
+    textarea {
+        width: 20rem;
+        padding: 20px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+    }
+    select {
+        width: 25rem;
+        padding: 10px;
+    }
+    button {
+        width: 150px;
+        margin: 7% auto;
+        padding: 10px;
+        border-radius: 7px;
+        background-color: rgb(163, 121, 247);
+        color: #fafafa;
+        border: 0px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR BIGGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .new-reminder-container h1 {
+        text-align: center;
+        color: rgb(172, 135, 247);
+        font-size: 2.1em;
+        margin-top: 10%;
+    }
+    form {
+        margin: auto;
+        display: inherit;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    label {
+        margin-bottom: 3%;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+    input {
+        width: 26rem;
+        padding: 10px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        height: 5rem;
+    }
+    input[value] {
+        font-size: 1.05em;
+    }
+    textarea {
+        width: 26rem;
+        padding: 10px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        height: 12rem;
+    }
+    select {
+        width: 25rem;
+        padding: 10px;
+    }
+    button {
+        width: 270px;
+        margin: 7% auto;
+        padding: 20px;
+        border-radius: 7px;
+        background-color: rgb(163, 121, 247);
+        color: #fafafa;
+        border: 0px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+}
+
+
+/*==========================================================MEDIA QUERIES FOR LARGER SCREENS =============================================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .new-reminder-container h1 {
+        text-align: center;
+        color: rgb(172, 135, 247);
+        font-size: 3.2em;
+        margin-top: 10%;
+    }
+    form {
+        margin: auto;
+        display: inherit;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    label {
+        margin-bottom: 3%;
+        font-weight: bold;
+        font-size: 2.2em;
+    }
+    input {
+        width: 26rem;
+        padding: 10px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        height: 5rem;
+    }
+    input[value] {
+        font-size: 1.05em;
+    }
+    textarea {
+        width: 26rem;
+        padding: 10px;
+        margin-bottom: 5%;
+        border: 0.01px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        height: 12rem;
+    }
+    select {
+        width: 25rem;
+        padding: 10px;
+    }
+    button {
+        width: 330px;
+        margin: 7% auto;
+        padding: 25px;
+        border-radius: 7px;
+        background-color: rgb(163, 121, 247);
+        color: #fafafa;
+        border: 0px;
+        font-size: 2.1em;
+        font-weight: bold;
+    }
+}
