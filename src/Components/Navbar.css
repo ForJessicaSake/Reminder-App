@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 2% 5%;
+    padding: 3% 5%;
     cursor: pointer;
     border-bottom: 1.5px solid #fafafa;
     align-items: center;

@@ -63,7 +63,7 @@
         overflow-x: hidden;
     }
     .reminder-container {
-        margin: 5% 5% 0% 5%;
+        margin: 7% 5% 0% 5%;
         padding: 5% 4%;
         box-shadow: 3px 10px 16px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
@@ -77,11 +77,13 @@
         margin-top: 7%;
     }
     .reminder-title {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        margin-bottom: 5%;
     }
     .reminder-container p {
         line-height: 2;
-        font-size: 1.1em;
+        font-size: 1.2em;
+        margin-bottom: 5%;
     }
     .reminder-container h4 {
         font-size: 1.2em;
@@ -89,7 +91,7 @@
     }
     .reminder-container h3 {
         font-size: 1.2em;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
 }
 
@@ -124,6 +126,7 @@
     .reminder-container p {
         line-height: 1.8;
         font-size: 1.8em;
+        margin-bottom: 3%;
     }
     .reminder-container h4 {
         font-size: 2em;
