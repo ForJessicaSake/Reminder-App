@@ -44,7 +44,7 @@ select {
     padding: 10px;
 }
 
-button {
+.btn {
     width: 150px;
     margin: 3% auto;
     padding: 10px;
@@ -105,7 +105,7 @@ button {
         width: 25rem;
         padding: 10px;
     }
-    button {
+    .btn {
         width: 150px;
         margin: 7% auto;
         padding: 10px;
@@ -169,7 +169,7 @@ button {
         width: 25rem;
         padding: 10px;
     }
-    button {
+    .btn {
         width: 270px;
         margin: 7% auto;
         padding: 20px;
@@ -233,7 +233,7 @@ button {
         width: 25rem;
         padding: 10px;
     }
-    button {
+    .btn {
         width: 330px;
         margin: 7% auto;
         padding: 25px;

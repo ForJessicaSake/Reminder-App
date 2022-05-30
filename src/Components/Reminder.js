@@ -12,7 +12,7 @@ function Reminder({ handleSubmit}) {
   const handleClick=(e)=>{
       e.preventDefault();
       handleSubmit(events, note, location, time)
-      
+
   }
 
     return (
@@ -51,7 +51,7 @@ function Reminder({ handleSubmit}) {
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
                 ></input>
-                <Link to='/'><input type='submit'/></Link> 
+                <Link to='/'><input type='submit' className='btn'/></Link> 
             </form>
         </section>
     )
