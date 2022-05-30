@@ -55,7 +55,7 @@ function Data() {
             <Router>
                 <Navbar />
                 <Switch>
-                    <Route exact path="/:id">
+                    <Route exact path="/">
                         <Home reminders={reminders} handleDelete={handleDelete} />
                     </Route>
                     <Route path="/Reminder">
